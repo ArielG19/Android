@@ -43,6 +43,6 @@ public class Cliente {
 
     @Override
     public String toString() {
-        return Nombre + "\n"+ Telefono;
+        return Nombre + "                   " + Telefono;
     }
 }

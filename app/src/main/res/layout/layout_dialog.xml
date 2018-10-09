@@ -3,27 +3,41 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent" android:layout_height="match_parent">
 
+
     <EditText
         android:id="@+id/nombreCliente"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_text"
+        android:backgroundTint="@color/common_google_signin_btn_text_dark_disabled"
         android:hint="Nombre"
         android:inputType="textPersonName"
-        android:paddingTop="12dp"
-        tools:ignore="HardcodedText" />
+        android:paddingLeft="30dp"
+        android:textColor="@android:color/holo_red_light"
+        android:textColorHint="@android:color/holo_red_light"
+        android:textCursorDrawable="@android:color/holo_red_light"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
 
     <EditText
         android:id="@+id/telefonoCliente"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Telefono"
-        android:inputType="text|phone"
-        android:paddingTop="12dp"
-        tools:ignore="HardcodedText,LabelFor"
-        android:layout_marginTop="12dp"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/nombreCliente"
         android:layout_below="@+id/nombreCliente"
-        android:layout_alignParentStart="true" />
+        android:layout_marginTop="17dp"
+        android:background="@drawable/edit_text"
+        android:backgroundTint="@color/common_google_signin_btn_text_dark_disabled"
+        android:hint="Teléfono"
+        android:inputType="text|phone"
+        android:paddingLeft="30dp"
+        android:textColor="@android:color/holo_red_light"
+        android:textColorHighlight="@android:color/holo_red_light"
+        android:textColorHint="@android:color/holo_red_light"
+        android:textColorLink="@android:color/holo_orange_light"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText,LabelFor,RtlHardcoded,RtlSymmetry" />
 
 </RelativeLayout>
